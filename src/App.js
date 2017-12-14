@@ -38,6 +38,8 @@ class App extends Component {
         <td>{datum.available_day}</td>
         <td>{datum.meeting_time}</td>
         <td>{datum.meeting_point}</td>
+        <td>{datum.variants.starts_on}</td>
+        <td>{datum.variants.ends_on}</td>
         </tr>
       )
     });
@@ -56,6 +58,8 @@ class App extends Component {
         <th>Available Day</th>
         <th>Meeting Time</th>
         <th>Meeting Point</th>
+        <th>Start Date</th>
+        <th>End Date</th>
       </tr>
         {data_list}
         </thead>
