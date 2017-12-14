@@ -34,17 +34,10 @@ class App extends Component {
         <tr key={index}>
         <td>{datum.description}</td>
         <td>{datum.important_information}</td>
-        <td>
-          <ol>
-             <li>{datum.notice.tour_duration}</li>
-             <li>{datum.notice.available_day}</li>
-             <li>{datum.notice.meeting_time}</li>
-             <li>{datum.notice.meeting_point}</li>
-             <li>{datum.notice.minimum_adult_age}</li>
-          </ol>
-        </td>
-        <td>{datum.schedule_details}</td>
-        <td>{datum.image_url}</td>
+        <td>{datum.tour_duration}</td>
+        <td>{datum.available_day}</td>
+        <td>{datum.meeting_time}</td>
+        <td>{datum.meeting_point}</td>
         </tr>
       )
     });
@@ -58,10 +51,12 @@ class App extends Component {
       <thead>
       <tr>
         <th>Description</th>
-        <th>Detail</th>
-        <th>Notice</th>
-        <th>Schedule</th>
-        </tr>
+        <th>Additional Information</th>
+        <th>Duration</th>
+        <th>Available Day</th>
+        <th>Meeting Time</th>
+        <th>Meeting Point</th>
+      </tr>
         {data_list}
         </thead>
         </div>
