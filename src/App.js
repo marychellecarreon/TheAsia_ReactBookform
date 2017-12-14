@@ -5,8 +5,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      apiData: {},
-      variants: []
+      apiData: {}
     }
   }
 
@@ -18,37 +17,34 @@ class App extends Component {
     .then(api => api.json())
     .then(apiJSON => {
       this.setState(
-        { apiData: apiJSON }, () => {
-          this.setState(
-            { variants: this.state.apiData.variants }
-          )
-        }
+        { apiData: apiJSON }
       )
     });
   }
 
   render() {
     console.log(this.state.apiData)
-    let data_list = this.state.variants.map((datum, index) => {
       return (
-        <tr key={index}>
-        <td>{datum.starts_on}</td>
-        </tr>
-      )
-    });
+      <div>
+        <h1>Description</h1>
+           <p>{this.state.apiData.description}</p>
+        <h2>Detail</h2>
+              <ol>Duration: {this.state.apiData.tour_duration}</ol>
+              <ol>Available Day: {this.state.apiData.available_day}</ol>
+              <ol>Meeting Time: {this.state.apiData.meeting_time}</ol>
+              <ol>Meeting Point: {this.state.apiData.meeting_point}</ol>
+        <h3>Notice</h3>
+          <p>{this.state.apiData.important_information}</p>
+        <h4>Schedule</h4>
+            
+      </div>
+      );
 
     return (
       <div>
       <div className="App">
       <header className="App-header">
-         <h1 className="App-title">The Asia</h1>
       </header>
-      <thead>
-      <tr>
-        <th>Select Date</th>
-      </tr>
-        {data_list}
-        </thead>
         </div>
       </div>
     );
