@@ -36,7 +36,6 @@ class App extends Component {
         <h3>Notice</h3>
           <p>{this.state.apiData.important_information}</p>
         <h4>Schedule</h4>
-            
       </div>
       );
 
