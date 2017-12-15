@@ -54,45 +54,54 @@ class App extends Component {
 
       return (
         <div className="container">
+        <a href="#"><img alt="The Asia" src="asialogo.png"/></a>
             <div className="row">
-                  <div className="col-md-3">
+                  <div className="col-md-2 desc">
                       <h1>Description</h1>
                   </div>
-                  <div className="col-md-5">
+                  <div className="col-md-9 desc">
                       <p>{this.state.apiData.description}</p>
                   </div>
-                  <div className="col-md-4">
+                  <div className="col-md-1 desc">
                       <h5>Select a Date</h5>
-                           {variants_item}
+                          {variants_item}
                   </div>
               </div>
 
              <div className="row">
-                      <div className="col-md-3">
+                      <div className="col-md-2">
                           <h2>Detail</h2>
                       </div>
-                      <div className="col-md-5">
-                             <ol>Duration: {this.state.apiData.tour_duration}</ol>
-                             <ol>Available Day: {this.state.apiData.available_day}</ol>
-                             <ol>Meeting Time: {this.state.apiData.meeting_time}</ol>
-                             <ol>Meeting Point: {this.state.apiData.meeting_point}</ol>
+                      <div className="col-md-9 duration">
+                      <p>
+                             <strong>Duration: </strong> {this.state.apiData.tour_duration}<br/>
+                             <strong>Available Day: </strong> {this.state.apiData.available_day}<br/>
+                             <strong>Meeting Time: </strong> {this.state.apiData.meeting_time}<br/>
+                             <strong>Meeting Point: </strong> {this.state.apiData.meeting_point}<br/>
+                      </p>
                       </div>
                     </div>
 
             <div className="row">
-                     <div className="col-md-3">
+                     <div className="col-md-2">
                           <h3>Notice</h3>
                      </div>
-                      <div className="col-md-5">
+                      <div className="col-md-9">
                             <p>{this.state.apiData.important_information}</p>
                       </div>
                     </div>
 
           <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-2">
                      <h4>Schedule</h4>
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-9">
+                <thead>
+                   <tr>
+                        <th width='25%'> Time </th>
+                         <th width='75%'> Place </th>
+                   </tr>
+                </thead>
                     {sched_display}
                 </div>
           </div>

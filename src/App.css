@@ -3,20 +3,43 @@
 .App {
   background-color: #fff;
 
+
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Open Sans',sans-serif;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: bolder;
   color: #4cac87;
-  line-height: 20px;
+  line-height: 30px;
+
+}
+
+h5 {
+  text-align: center;
 }
 
 p, ol {
   font-family: 'Open Sans',sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #4a4e50;
   font-weight: 600;
   line-height: 25px;
+  text-align: justify;
+  padding-left: 0;
+}
+
+.desc {
+  padding-top: 50px;
+}
+
+.container {
+  margin-left: 100px;
+}
+
+.duration {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  color: #4a4e50;
+  padding-bottom: 20px;
 }
