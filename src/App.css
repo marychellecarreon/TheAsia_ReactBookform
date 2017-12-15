@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .App {
-  text-align: center;
-  background-color: #211f20;
+  background-color: #fff;
+
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Cabin', sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  color: green;
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #4cac87;
+  line-height: 20px;
 }
 
 p, ol {
-  font-family: 'Cabin', sans-serif;
-  font-size: 18px;
-  color: gray;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  color: #4a4e50;
+  font-weight: 600;
+  line-height: 25px;
 }
