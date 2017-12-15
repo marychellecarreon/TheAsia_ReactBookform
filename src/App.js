@@ -24,12 +24,10 @@ class App extends Component {
 
   render() {
     console.log(this.state.apiData)
-       let sched_list;
-           if(this.state.apiData.schedule_details)
-           sched_list = this.state.apiData.schedule_details.map((datum, index) => {
-           })
+
       return (
       <div>
+
         <h1>Description</h1>
            <p>{this.state.apiData.description}</p>
         <h2>Detail</h2>
@@ -40,7 +38,11 @@ class App extends Component {
         <h3>Notice</h3>
           <p>{this.state.apiData.important_information}</p>
         <h4>Schedule</h4>
-          <p>{this.state.apiData.schedule_details.time}</p>
+           {this.state.apiData.schedule_details.map((details, index) =>
+           <div key={index}>
+           <p>{details.time} {details.description}</p>
+           </div>
+         )}
       </div>
       );
 
