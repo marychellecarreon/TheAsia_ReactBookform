@@ -15,18 +15,19 @@ h1, h2, h3, h4, h5 {
 
 }
 
-h5 {
+h5, p {
+  text-align: justify;
+  padding-left: 80px;
   text-align: center;
 }
 
-p, ol {
+p, ol, th {
   font-family: 'Open Sans',sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #4a4e50;
   font-weight: 600;
   line-height: 25px;
   text-align: justify;
-  padding-left: 0;
 }
 
 .desc {
@@ -34,7 +35,10 @@ p, ol {
 }
 
 .container {
-  margin-left: 100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
 }
 
 .duration {

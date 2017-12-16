@@ -46,7 +46,8 @@ class App extends Component {
    let variants_item = this.state.variants.map((variant, index) => {
       return (
         <div key={index}>
-          <p> {variant.starts_on} {variant.ends_on} </p>
+          <p> {variant.starts_on}</p>
+         <p> {variant.ends_on} </p>
         </div>
       )
    })
@@ -54,15 +55,15 @@ class App extends Component {
 
       return (
         <div className="container">
-        <a href="#"><img alt="The Asia" src="asialogo.png"/></a>
+        <a href="#"><img alt="The Asia" id='asialogo' src="asialogo.png"/></a>
             <div className="row">
                   <div className="col-md-2 desc">
                       <h1>Description</h1>
                   </div>
-                  <div className="col-md-9 desc">
+                  <div className="col-md-7 desc">
                       <p>{this.state.apiData.description}</p>
                   </div>
-                  <div className="col-md-1 desc">
+                  <div className="col-md-3 desc">
                       <h5>Select a Date</h5>
                           {variants_item}
                   </div>
@@ -72,7 +73,7 @@ class App extends Component {
                       <div className="col-md-2">
                           <h2>Detail</h2>
                       </div>
-                      <div className="col-md-9 duration">
+                      <div className="col-md-7 duration">
                       <p>
                              <strong>Duration: </strong> {this.state.apiData.tour_duration}<br/>
                              <strong>Available Day: </strong> {this.state.apiData.available_day}<br/>
@@ -86,7 +87,7 @@ class App extends Component {
                      <div className="col-md-2">
                           <h3>Notice</h3>
                      </div>
-                      <div className="col-md-9">
+                      <div className="col-md-7">
                             <p>{this.state.apiData.important_information}</p>
                       </div>
                     </div>
@@ -95,7 +96,7 @@ class App extends Component {
                 <div className="col-md-2">
                      <h4>Schedule</h4>
                 </div>
-                <div className="col-md-9">
+                <div className="col-md-7">
                 <thead>
                    <tr>
                         <th width='25%'> Time </th>
