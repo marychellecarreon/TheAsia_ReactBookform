@@ -71,7 +71,7 @@ class App extends Component {
                   <div className="col-md-3 desc">
                       <h5>Select date</h5>
                       <center><DayPicker showOutsideDays /></center>
-                          {variants_item}
+                             {variants_item}
                   </div>
               </div>
 
@@ -103,13 +103,15 @@ class App extends Component {
                      <h4>Schedule</h4>
                 </div>
                 <div className="col-md-7">
+                <table className='table table-striped'>
                 <thead>
                    <tr>
-                        <th width='25%'> Time </th>
-                         <th width='75%'> Place </th>
+                        <th width='25%'>Time</th>
+                         <th width='75%'>Place</th>
                    </tr>
                 </thead>
-                    {sched_display}
+                    <td>{sched_display}</td>
+                </table>
                 </div>
           </div>
         </div>

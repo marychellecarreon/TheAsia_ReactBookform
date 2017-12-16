@@ -21,7 +21,7 @@ h5, p {
   text-align: center;
 }
 
-p, ol, th {
+p, ol {
   font-family: 'Open Sans',sans-serif;
   font-size: 16px;
   color: #4a4e50;
@@ -30,6 +30,9 @@ p, ol, th {
   text-align: justify;
 }
 
+.th {
+  padding-left: 80px;
+}
 .desc {
   padding-top: 50px;
 }
