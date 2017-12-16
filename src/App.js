@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import FontAwesome from 'react-fontawesome';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
+
 
 
 
@@ -18,7 +18,7 @@ class App extends Component {
 
 
   componentWillMount(){
-    let url = "http://api.development.theasia.com/Products/findBySlug/captain-explorer-dukw-tour-singapore-duck-tour-to-merlion-park-and-more-91"
+    let url = "https://api-development.theasia.com/Products/findBySlug/captain-explorer-dukw-tour-singapore-duck-tour-to-merlion-park-and-more-91"
     fetch(url, {
       method: 'get'
     })
