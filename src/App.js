@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
-
-
+import FontAwesome from 'react-fontawesome';
 
 
 class App extends Component {
@@ -12,7 +11,7 @@ class App extends Component {
     this.state = {
       apiData: {},
       sched_details: [],
-      variants: []
+      variants: [],
     }
   }
 
@@ -41,10 +40,12 @@ class App extends Component {
     console.log(this.state.apiData)
     console.log(this.state.sched_details)
     console.log(this.state.variants)
+
     let sched_display = this.state.sched_details.map((sched, index) => {
       return (
         <div key={index}>
-          <p>{sched.time} {sched.description}</p>
+          <td width='25%'>{sched.time}</td>
+          <td width='75%'>{sched.description}</td>
         </div>
       )
     })
@@ -60,7 +61,14 @@ class App extends Component {
 
       return (
         <div className="container">
-        <a href="#"><img alt="The Asia" id='asialogo' src="asialogo.png"/></a>
+            <a href="#"><img alt="The Asia" id='asialogo' src="asialogo.png"/></a>
+            <input className="fa-fa-search" type="text" placeholder="Search"/>
+            <a href="#"><img alt="Profile" className="header" src="profile.png"/></a>
+            <a href="#" className="header" title="USD">USD</a>
+            <a href="#" className="header" title="English">English</a>
+            <a href="#" className="header" title="Blogs">Blogs</a>
+            <a href="#" className="header" title="Cities">Cities</a>
+            <a href="#" className="header"  title="Home">Home</a>
             <div className="row">
                   <div className="col-md-2 desc">
                       <h1>Description</h1>
@@ -102,19 +110,32 @@ class App extends Component {
                 <div className="col-md-2">
                      <h4>Schedule</h4>
                 </div>
-                <div className="col-md-7">
-                <table className='table table-striped'>
-                <thead>
-                   <tr>
-                        <th width='25%'>Time</th>
-                         <th width='75%'>Place</th>
-                   </tr>
-                </thead>
-                    <td>{sched_display}</td>
-                </table>
+                <div className="col-md-7 margin-table">
+                    <table className='table table-striped'>
+                       <thead>
+                          <tr>
+                             <th width='25%'>Time</th>
+                             <th width='75%'>Place</th>
+                         </tr>
+                      </thead>
+                    </table>
+                  </div>
+            </div>
+            <div className="row">
+                <div className="col-md-2">
                 </div>
+                <div className="col-md-7 margin-table">
+                   <table className="table table-striped">
+                      <tbody>
+                         <tr>
+                            <td>{sched_display}</td>
+                        </tr>
+                    </tbody>
+                   </table>
+              </div>
           </div>
         </div>
+
 
 
       );

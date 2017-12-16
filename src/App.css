@@ -15,10 +15,10 @@ h1, h2, h3, h4, h5 {
 
 }
 
-h5, p {
-  text-align: justify;
-  padding-left: 80px;
+h5, p, td {
   text-align: center;
+  font-family: 'Open Sans',sans-serif;
+
 }
 
 p, ol {
@@ -31,7 +31,7 @@ p, ol {
 }
 
 .th {
-  padding-left: 80px;
+  text-align: center;
 }
 .desc {
   padding-top: 50px;
@@ -49,4 +49,21 @@ p, ol {
   font-size: 15px;
   color: #4a4e50;
   padding-bottom: 20px;
+}
+
+.table.table-striped td {
+  line-height: 25px;
+}
+
+.margin-table {
+  margin-top: -5px;
+}
+
+.header {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  color: #4a4e50;
+  float: right;
+  word-spacing: 2px;
+  padding: 12px;
 }
