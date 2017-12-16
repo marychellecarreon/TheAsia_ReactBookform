@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import FontAwesome from 'react-fontawesome';
+import DayPicker from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
+
 
 
 class App extends Component {
@@ -11,6 +15,7 @@ class App extends Component {
       variants: []
     }
   }
+
 
   componentWillMount(){
     let url = "http://api.development.theasia.com/Products/findBySlug/captain-explorer-dukw-tour-singapore-duck-tour-to-merlion-park-and-more-91"
@@ -64,7 +69,8 @@ class App extends Component {
                       <p>{this.state.apiData.description}</p>
                   </div>
                   <div className="col-md-3 desc">
-                      <h5>Select a Date</h5>
+                      <h5>Select date</h5>
+                      <center><DayPicker showOutsideDays /></center>
                           {variants_item}
                   </div>
               </div>
