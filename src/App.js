@@ -117,6 +117,9 @@ class App extends Component {
     };
 
 
+     let description_text = `${this.state.apiData.description}`.replace(/","|\["|\"]|"/g, '\n');
+
+
 
        return (
          <div className="container">
@@ -133,7 +136,7 @@ class App extends Component {
                        <h1>Description</h1>
                    </div>
                    <div className="col-md-7 desc">
-                       <p>{this.state.apiData.description}</p>
+                       <p>{description_text}</p>
                    </div>
                    <div className="col-md-3 desc">
                      <h5>Select date</h5>
