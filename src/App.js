@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
-import FontAwesome from 'react-fontawesome';
 
 
 class App extends Component {
   constructor(props){
     super(props);
+
     this.state = {
       apiData: {},
       sched_details: [],
@@ -58,6 +58,45 @@ class App extends Component {
       )
    })
 
+   let price_list = this.state.variants.map((variant, index) => {
+     return (
+       <div key={"price"+index}>
+         {variant.price.map(price => {
+           return (
+             <center>
+               <table className="table">
+               <thead>
+               <tr>
+                  <th></th>
+                  <th>Price</th>
+                  <th>Pax</th>
+                  <th>Total</th>
+               </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                    <td>Adult</td>
+                    <td>{price.adult_price}</td>
+                    <td>{price.pax}</td>
+                    <td>{price.adult_price * price.pax}</td>
+                  </tr>
+                  <tr>
+                    <td>Children</td>
+                    <td>{price.child_price}</td>
+                    <td>{0}</td>
+                    <td>{price.child_price * 0}</td>
+                  </tr>
+                </tbody>
+                </table>
+                <h2>Total Cost <span>{price.adult_price * price.pax + price.child_price *price.pax}</span></h2>
+                </center>
+
+           )
+         })}
+         </div>
+     )
+   })
+
 
       return (
         <div className="container">
@@ -79,7 +118,8 @@ class App extends Component {
                   <div className="col-md-3 desc">
                       <h5>Select date</h5>
                       <center><DayPicker showOutsideDays /></center>
-                             {variants_item}
+                            {variants_item}
+                            {price_list}
                   </div>
               </div>
 
