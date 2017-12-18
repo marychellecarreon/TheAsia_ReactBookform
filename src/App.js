@@ -107,7 +107,7 @@ class App extends Component {
                      </tr>
                    </tbody>
                  </table>
-                 <center><h6>Total Cost {price.adult_price * price.pax + price.child_price * price.pax} USD</h6></center>
+                 <center><h6>Total Cost: {price.adult_price * price.pax + price.child_price * price.pax} USD</h6></center>
                </div>
              )}
            )}
