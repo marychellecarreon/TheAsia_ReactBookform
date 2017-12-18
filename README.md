@@ -4,7 +4,7 @@
 ### Background
 Make a react app for the booking functionality (booking calculation) of product page of their website using their API.
 
-### Get Started
+### Get Started / Usage
 - Create a local copy by cloning the repository in your terminal
  ```sh
           $ git clone https://github.com/marychellecarreon/TheAsia_ReactBookform.git
@@ -19,7 +19,7 @@ Make a react app for the booking functionality (booking calculation) of product 
 ```
 
 
-### Usage
+### Information
 - Select the dates to calculate the Adult and Children price with the default pax from API.
 - Available dates with data are the following:
        ` 6th Dec 2016(12am) till 26th Dec 2017(12am) `
