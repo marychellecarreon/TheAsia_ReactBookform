@@ -2,7 +2,7 @@
 
 
 ### Background
-Make a react app for the booking functionality (booking calculation) of product page of their website using their API.
+Make a react app for the booking functionality (booking calculation) of The Asia product page website using their API.
 
 ### Get Started / Usage
 - Create a local copy by cloning the repository in your terminal
