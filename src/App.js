@@ -145,7 +145,7 @@ class App extends Component {
                     </tbody>
                     </table>
                   </div>
-                  <div className="col-md-3 desc">
+                  <div className="col-md-3 desc border">
                     <h5>Select date</h5>
                     <Datetime
                       value={selectedDay}
@@ -183,7 +183,9 @@ class App extends Component {
                       <div className="col-md-7 margin-table">
                         <table className="table table-striped">
                           <tbody>
-                            <td>{info_text}</td>
+                            <td>
+                            {info_text}
+                            </td>
                           </tbody>
                         </table>
                       </div>
