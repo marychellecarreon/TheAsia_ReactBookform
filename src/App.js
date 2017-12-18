@@ -48,10 +48,10 @@ class App extends Component {
 
     let sched_display = this.state.sched_details.map((sched, index) => {
       return (
-        <div key={index}>
+        < tr key={index}>
           <td width='25%'>{sched.time}</td>
           <td width='75%'>{sched.description}</td>
-        </div>
+        </tr>
       )
     })
 
@@ -107,7 +107,7 @@ class App extends Component {
                      </tr>
                    </tbody>
                  </table>
-                 <h2>Total Cost {price.adult_price * price.pax + price.child_price * price.pax} USD</h2>
+                 <center><h6>Total Cost {price.adult_price * price.pax + price.child_price * price.pax} USD</h6></center>
                </div>
              )}
            )}
@@ -124,18 +124,26 @@ class App extends Component {
         <div className="container">
             <a href="#"><img alt="The Asia" id='asialogo' src="asialogo.png"/></a>
             <input className="fa-fa-search" type="text" placeholder="Search"/>
-            <a href="#"><img alt="Profile" className="header" src="profile.png"/></a>
+
+            <a href="#" className="header" title="Profile">Profile</a>
             <a href="#" className="header" title="USD">USD</a>
             <a href="#" className="header" title="English">English</a>
-            <a href="#" className="header" title="Blogs">Blogs</a>
+            <a href="#" className="header" title="Blog">Blog</a>
             <a href="#" className="header" title="Cities">Cities</a>
             <a href="#" className="header"  title="Home">Home</a>
+
             <div className="row">
-                  <div className="col-md-2 desc">
+                  <div className="col-md-2 lg-2 desc">
                       <h1>Description</h1>
                   </div>
-                  <div className="col-md-7 desc">
-                      <p>{description_text}</p>
+                  <div className="col-md-7 desc margin-table">
+                    <table className="table table-striped">
+                    <tbody>
+                     <td>
+                       {description_text}
+                      </td>
+                    </tbody>
+                    </table>
                   </div>
                   <div className="col-md-3 desc">
                     <h5>Select date</h5>
@@ -150,30 +158,39 @@ class App extends Component {
               </div>
 
              <div className="row">
-                      <div className="col-md-2">
+                      <div className="col-md-2 lg-2">
                           <h2>Detail</h2>
                       </div>
-                      <div className="col-md-7 duration">
-                      <p>
+                      <div className="col-md-7 duration margin-table">
+                        <table className="table table-striped">
+                      <tbody>
+                         <td>
                              <strong>Duration: </strong> {this.state.apiData.tour_duration}<br/>
                              <strong>Available Day: </strong> {this.state.apiData.available_day}<br/>
                              <strong>Meeting Time: </strong> {this.state.apiData.meeting_time}<br/>
                              <strong>Meeting Point: </strong> {this.state.apiData.meeting_point}<br/>
-                      </p>
+                         </td>
+                      </tbody>
+                       </table>
                       </div>
                     </div>
 
+
             <div className="row">
-                     <div className="col-md-2">
+                     <div className="col-md-2 lg-2">
                           <h3>Notice</h3>
                      </div>
-                      <div className="col-md-7">
-                            <p>{info_text}</p>
+                      <div className="col-md-7 margin-table">
+                        <table className="table table-striped">
+                          <tbody>
+                            <td>{info_text}</td>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
 
           <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-2 lg-2 sm-4 xs-4">
                      <h4>Schedule</h4>
                 </div>
                 <div className="col-md-7 margin-table">
@@ -188,14 +205,12 @@ class App extends Component {
                   </div>
             </div>
             <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-2 lg-2 sm-4 xs-4">
                 </div>
                 <div className="col-md-7 margin-table">
                    <table className="table table-striped">
                       <tbody>
-                         <tr>
-                            <td>{sched_display}</td>
-                        </tr>
+                            {sched_display}
                     </tbody>
                    </table>
               </div>
