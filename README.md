@@ -21,13 +21,28 @@ Make a react app for the booking functionality (booking calculation) of product 
 
 ### Usage
 - Select the dates to calculate the Adult and Children price with the default pax from API.
-- Available dates with data are from 26th Dec 2016 (12am) till 28th March 2018 (12am), however, calculation is working only on current date and succeeding dates. Old dates are considered inactive.
-- Please see some of the examples below:
+- Available dates with data are the following:
+      - 26th Dec 2016(12am) till 26th Dec 2017(12am)
+      - 29th Dec 2017(12am) till 28th March 2018(12am)
 
-![screen shot 2017-12-18 at 8 13 13 pm](https://user-images.githubusercontent.com/26729817/34109081-11cf6b38-e435-11e7-8bdd-8f51c0875203.png)
+- Note : Calculation is working only on current date and succeeding dates. Old dates are considered inactive.
+
+- Please see some of the screenshots of date selection:
+
+#### CURRENT DATE
+![screen shot 2017-12-18 at 8 59 16 pm](https://user-images.githubusercontent.com/26729817/34109564-928746dc-e436-11e7-8b21-7f8b27212cb7.png)
 
 
-![screen shot 2017-12-18 at 8 50 56 pm](https://user-images.githubusercontent.com/26729817/34109138-3e2b0f2a-e435-11e7-9ee0-01426fc7fc46.png)
+
+### NOT AVAILABLE DATE
+![screen shot 2017-12-18 at 9 01 57 pm](https://user-images.githubusercontent.com/26729817/34109607-bc5cd95e-e436-11e7-93b4-4fbaa19d8f97.png)
 
 
-![screen shot 2017-12-18 at 8 52 20 pm](https://user-images.githubusercontent.com/26729817/34109190-6530ab16-e435-11e7-98d4-3d394987fe83.png)
+### FUTURE DATE
+
+![screen shot 2017-12-18 at 9 04 07 pm](https://user-images.githubusercontent.com/26729817/34109720-0dc9b7f8-e437-11e7-8d8b-398eaf61f3f5.png)
+
+
+### SCREENSHOT OF THE APP CREATED
+
+![screen shot 2017-12-18 at 9 06 01 pm](https://user-images.githubusercontent.com/26729817/34109800-4d9ef85c-e437-11e7-9340-4347ccc82371.png)
