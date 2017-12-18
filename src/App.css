@@ -290,3 +290,19 @@ h6 {
 .border-table {
   border-style: ridge;
 }
+
+input {
+  border: #000;
+  font-size: 16px;
+  font-family: 'Open Sans',sans-serif;
+}
+
+::placeholder {
+  font-size: 15px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+:placeholder-shown {
+  border-box: #000;
+}
