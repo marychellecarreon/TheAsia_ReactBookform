@@ -1,4 +1,4 @@
-### Technical Assignment
+## Technical Assignment
 
 
 ### Background
@@ -22,8 +22,8 @@ Make a react app for the booking functionality (booking calculation) of product 
 ### Usage
 - Select the dates to calculate the Adult and Children price with the default pax from API.
 - Available dates with data are the following:
-      - 26th Dec 2016(12am) till 26th Dec 2017(12am)
-      - 29th Dec 2017(12am) till 28th March 2018(12am)
+      * 26th Dec 2016(12am) till 26th Dec 2017(12am)
+      * 29th Dec 2017(12am) till 28th March 2018(12am)
 
 - Note : Calculation is working only on current date and succeeding dates. Old dates are considered inactive.
 
@@ -38,8 +38,7 @@ Make a react app for the booking functionality (booking calculation) of product 
 ![screen shot 2017-12-18 at 9 01 57 pm](https://user-images.githubusercontent.com/26729817/34109607-bc5cd95e-e436-11e7-93b4-4fbaa19d8f97.png)
 
 
-### FUTURE DATE
-
+### FUTURE DATE (with different set of price and pax on current date)
 ![screen shot 2017-12-18 at 9 04 07 pm](https://user-images.githubusercontent.com/26729817/34109720-0dc9b7f8-e437-11e7-8d8b-398eaf61f3f5.png)
 
 
