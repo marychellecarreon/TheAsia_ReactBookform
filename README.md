@@ -23,4 +23,4 @@ Make a react app for the booking functionality (booking calculation) of product 
 - Select the dates to calculate the Adult and Children price on the default pax from API.
 - Calculation is working on current date and succeeding dates based on the API. Old dates are considered inactive.
 - Please see example below:
-  1) 
+  1)
