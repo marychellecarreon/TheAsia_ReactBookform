@@ -19,7 +19,7 @@ Make a react app for the booking functionality (booking calculation) of The Asia
 ```
 
 
-### Information
+### Booking Information
 - Select the dates to calculate the Adult and Children price with the default pax from API.
 - Available dates with data are the following:
        ` 6th Dec 2016(12am) till 26th Dec 2017(12am) `
